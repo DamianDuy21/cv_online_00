@@ -4,18 +4,18 @@
 // switch mode: light-dark
 const themeBtn = document.querySelector("[data-theme-btn]")
 const HTML = document.querySelector("html")
-let theme = localStorage.getItem("theme")
+let theme = sessionStorage.getItem("theme")
 HTML.dataset.theme = theme;
 
 
 themeBtn.addEventListener("click", () => {
     if (HTML.dataset.theme == "dark") {
         HTML.dataset.theme = "light"
-        localStorage.setItem("theme", HTML.dataset.theme)
+        sessionStorage.setItem("theme", HTML.dataset.theme)
     }
     else if (HTML.dataset.theme == "light") {
         HTML.dataset.theme = "dark"
-        localStorage.setItem("theme", HTML.dataset.theme)
+        sessionStorage.setItem("theme", HTML.dataset.theme)
     }
 })
 
