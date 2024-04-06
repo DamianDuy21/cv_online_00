@@ -785,6 +785,10 @@ body {
         justify-content: center;
         padding: 16px 24px;
         border-top: 1px solid var(--outline-variant);
+
+        p {
+            text-align: center;
+        }
     }
 }
 
