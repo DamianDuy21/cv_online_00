@@ -659,8 +659,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px 24px;
+  padding: 0px 24px;
   border-top: 1px solid var(--outline-variant);
+  height: 64px;
 }
 .footer .container p {
   text-align: center;
